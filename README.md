@@ -7,7 +7,7 @@ This repository is used to store the code for all on-chain collections and acts 
 
 ### Storing in contract bytecode
 
-_This step is usually done by the studio team_
+_This step is usually performed by the studio team_
 
 - generate a gzipped tarball of all files
   - `tar -czf archive.tar.gz sketch.min.js desc.json`
@@ -17,9 +17,9 @@ _This step is usually done by the studio team_
 
 ### Code verification
 
-Please double-check and make sure that the stored code matches the one used for rendering the tokens.
+Please make sure that the stored code matches the one used for rendering the tokens.
 
-The code can be either fetched directly from the contract using the `repo.getBlob(collectionAddress)` or more conveniently using the tool under [gmstudio.art/repo](https://www.gmstudio.art/repo).
+The code can be either fetched directly from the contract using the `repo.getBlob(collectionAddress)` or more conveniently using the tool under [gmstudio.art/repo](https://www.gmstudio.art/repo):
 
 - Connect a wallet (needed to get a connection to the blockchain)
 - Make sure to select the correct collection address
@@ -32,7 +32,7 @@ Please verify that the stored script is correct e.g. by rerendering the genesis 
 
 If the stored code is correct, you can proceed to sign the repository entry (this step is optional but we highly encourage to do so).
 
-- Connect the wallet that you want to use to sign the code entry.
+- Connect the wallet that you want to use for signing the entry.
 - Make sure to select the correct collection address
 - Click `Sign`
 - Metamask will pop up and prompt you to sign something - please do so.
