@@ -7,6 +7,8 @@ This repository is used to store the code for all on-chain collections and acts 
 
 ### Storing in contract bytecode
 
+_This step is usually done by the studio team_
+
 - generate a gzipped tarball of all files
   - `tar -czf archive.tar.gz sketch.min.js desc.json`
 - get the blob's hex string e.g. by `echo "0x"$(hexdump archive.tar.gz -v -e '/1 "%02X"')`
@@ -14,8 +16,6 @@ This repository is used to store the code for all on-chain collections and acts 
   - an event containing the storage address will be emitted during the transaction
 
 ### Code verification
-
-_This step has do be done by the artist._
 
 Please double-check and make sure that the stored code matches the one used for rendering the tokens.
 
@@ -29,8 +29,6 @@ The code can be either fetched directly from the contract using the `repo.getBlo
 Please verify that the stored script is correct e.g. by rerendering the genesis token using the downloaded code. 
 
 ### Code signature
-
-_This step has do be done by the artist._
 
 If the stored code is correct, you can proceed to sign the repository entry (this step is optional but we highly encourage to do so).
 
