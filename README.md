@@ -28,6 +28,11 @@ The code can be either fetched directly from the contract using the `repo.getBlo
 
 Please verify that the stored script is correct e.g. by rerendering the genesis token using the downloaded code. 
 
+You can fetch the seed for a given token directly from the collection contract on etherscan:
+
+- Navigate to the collection contract, e.g. [0x65d8b2bf930a0015028efcaee5af7bf61b90b76f](https://etherscan.io/address/0x65d8b2bf930a0015028efcaee5af7bf61b90b76f#readContract)
+- Fetch the seed using `contract.tokenSeed(tokenId)`
+
 ### Code signature
 
 If the stored code is correct, you can proceed to sign the repository entry (this step is optional but we highly encourage to do so).
