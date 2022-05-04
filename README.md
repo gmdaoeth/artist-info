@@ -2,8 +2,8 @@
 
 ## Code archival
 
-The official on-chain code repository for the gm.studio was deployed to [0x8229e9bc30cb02c2d9af25022bc146a302c48c47](https://etherscan.io/address/0x8229e9bc30cb02c2d9af25022bc146a302c48c47#readContract).
-This repository is used to store the code for all on-chain collections and acts as a central database thereof.
+The official on-chain code repository for the gm.studio is located at [0x8229e9bc30cb02c2d9af25022bc146a302c48c47](https://etherscan.io/address/0x8229e9bc30cb02c2d9af25022bc146a302c48c47#readContract).
+This repository stores the code for all on-chain collections and acts as a central database.
 
 ### Storing in contract bytecode
 
@@ -17,7 +17,7 @@ _This step is usually performed by the studio team_
 
 ### Code verification
 
-Please make sure that the stored code matches the one used for rendering the tokens.
+Please verify that the stored code matches the one used for rendering the tokens.
 
 The code can be either fetched directly from the contract using the `repo.getBlob(collectionAddress)` or more conveniently using the tool under [gmstudio.art/repo](https://www.gmstudio.art/repo):
 
@@ -26,7 +26,10 @@ The code can be either fetched directly from the contract using the `repo.getBlo
 - Click `Download Blob` to download the code archive
 - Unpack the archive
 
-Please verify that the stored script is correct e.g. by rerendering the genesis token using the downloaded code. 
+Please verify that the stored script is correct e.g. by
+
+- rerendering the genesis token using the downloaded code
+- performing a simple `diff` to the latest version
 
 You can fetch the seed for a given token directly from the collection contract on etherscan:
 
@@ -35,11 +38,11 @@ You can fetch the seed for a given token directly from the collection contract o
 
 ### Code signature
 
-If the stored code is correct, you can proceed to sign the repository entry (this step is optional but we highly encourage to do so).
+If the stored code is correct, you can proceed to sign the repository entry (this step is optional but we highly encourage you to do so).
 
 - Connect the wallet that you want to use for signing the entry.
 - Make sure to select the correct collection address
 - Click `Sign`
 - Metamask will pop up and prompt you to sign something - please do so.
-  - Even though some of the characters might seem weird, this is totally fine because we are signing the raw binary hash of the repository entry while Metamask tries to interpret it as a string.
+  - Even though some of the characters might seem weird, this is fine because we are signing the raw binary hash of the repository entry whereas Metamask tries to interpret it as a string.
 - Please communicate the output appearing below the buttons to the studio team.
